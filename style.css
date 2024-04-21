@@ -1,3 +1,3 @@
-#grad {
-  background-image: linear-gradient(to bottom right, green, white);
+body {
+  background: green
 }
