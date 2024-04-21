@@ -1,31 +1,50 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Free Robux Generator</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-  </head>
-  <body>
-      <table style="background-color:#013220">
-        <tr>
-        <th>Name</th>
-        <th>Job Title</th> 
-        <th>Email address</th>
-        </tr>
-        <tr>
-        <td>Anna Fitzgerald</td>
-        <td>Staff Writer</td>
-        <td>example@company.com</td>
-        </tr>
-        <tr>
-        <td>John Smith</td>
-        <td>Marketing Manager</td>
-        <td>example2@company.com</td>
-        </tr>
-        <tr>
-        <td>Zendaya Grace</td>
-        <td>CEO</td>
-        <td>example2@company.com</td>
-        </tr>
-      </table>
-  </body>
+    <head>
+        <style>
+            body {
+            background: linear-gradient(to bottom, #159e1c, #1e5a06);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            }
+            .box {
+            background-color: darkgreen;
+            width: 450px;
+            height: 200px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(1, 83, 22, 0.3);
+            }
+            .my-button {
+            background-color: #0ab944; /* Change to your desired color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            float: center;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <h1>Robux Generator</h1>
+            <h4>Click the button below to download the FREE robux generator!</h4>
+            <br>
+            <button id="downloadButton1" class="my-button">Download Now<br>Windows</button>
+            <button id="downloadButton2" class="my-button">Download Now<br>Linux (WIP)</button>
+            <button id="downloadButton3" class="my-button">Download Now<br>Mac (WIP)</button>
+        </div>
+        <script>
+            const downloadButton1 = document.getElementById('downloadButton1');
+            downloadButton1.addEventListener('click', () => {
+                // Replace with your actual download link for Windows
+                window.location.href = 'https://example.com/your-download-link.exe';
+            });
+        </script>
+    </body>
 </html>
